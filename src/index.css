@@ -285,35 +285,3 @@
     gap: 10px;
   }
 
-/* Extra small devices (Phones) */
-@media (max-width: 575px) {
-  body {
-    
-  }
-}
-
-/* Small devices (Larger Phones) */
-@media (min-width: 576px) and (max-width: 767px) {
-
-}
-
-/* Medium devices (Tablets) */
-@media (min-width: 768px) and (max-width: 991px) {
-  .chat-app {
-    grid-template-columns: 1fr 5fr;
-  }
-}
-
-/* Large devices (Laptops) */
-@media (min-width: 992px) and (max-width: 1199px) {
-  body {
-    
-  }
-}
-
-/* Extra large devices (Desktops) */
-@media (min-width: 1200px) {
-  body {
-    
-  }
-}
