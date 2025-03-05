@@ -1,5 +1,5 @@
 import { useRef,useState, useEffect,useContext, useCallback } from 'react';
-import {db,auth} from './firebase';
+import {db} from './firebase';
 import {AuthContext} from './AuthContext';
 import { ChatContext } from './ChatContext';
 import {v4 as uuid} from "uuid"
@@ -189,7 +189,7 @@ const ChatList = ({setSelectedchat,ismobile,selectedchat}) => {
                {
                 user.length > 0 && user?.map((item,index) => (
                   <SearchUser key={index} selectedchat={selectedchat} ismobile={ismobile} onClick={() => {handleSelect(item);handlechoose(item)}} className='usersearching rounded-md w-full bg-gray-100 py-5 px-5 mb-3 flex justify-center align-middle gap-3'>
-                    <img src={item.photoURL} className="avatar w-12 h-12 rounded-full"/>
+                    <img src={item.photoURL} className="avatar w-12 h-12 rounded-full" alt={item.name}/>
                     <div className='chat-title' style={{ display: ismobile  === 'true' ? 'none' : 'block' }}>
                       <span className="chat-name capitalize font-bold">{item.name}</span>
                     </div>
@@ -202,7 +202,7 @@ const ChatList = ({setSelectedchat,ismobile,selectedchat}) => {
           {
             existUser.length > 0 && existUser.map((item,index) => (
               <ExistUser key={index} selectedchat={selectedchat} ismobile={ismobile} onClick={() => handlechoose(item)} className='usersearching rounded-md w-full  py-5 px-5 mb-3 flex justify-center align-middle gap-3'>
-                <img src={item.photoURL} className="avatar w-12 h-12 rounded-full"/>
+                <img src={item.photoURL} className="avatar w-12 h-12 rounded-full" alt={item.name}/>
                 <div className='chat-title' style={{ display: ismobile  === 'true' ? 'none' : 'block' }}>
                   <span className="chat-name capitalize font-bold" >{item.name}</span>
                   <p >{item.timestamp}</p>
