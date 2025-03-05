@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Top-Reh/Chatapp.git/static/css/main.8e1aaf5b.css",
+    "main.js": "/Top-Reh/Chatapp.git/static/js/main.d2495dfa.js",
+    "static/media/bootstrap-icons.woff?": "/Top-Reh/Chatapp.git/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/Top-Reh/Chatapp.git/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "index.html": "/Top-Reh/Chatapp.git/index.html",
+    "main.8e1aaf5b.css.map": "/Top-Reh/Chatapp.git/static/css/main.8e1aaf5b.css.map",
+    "main.d2495dfa.js.map": "/Top-Reh/Chatapp.git/static/js/main.d2495dfa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e1aaf5b.css",
+    "static/js/main.d2495dfa.js"
+  ]
+}
