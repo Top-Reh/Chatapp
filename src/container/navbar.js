@@ -7,7 +7,7 @@ import { useMediaQuery } from 'react-responsive';
 import styled from 'styled-components';
 
 const Navbar = () => {
-    const [user, loading, error] = useAuthState(auth);
+    const [user] = useAuthState(auth);
     const isMobile = useMediaQuery({ maxWidth: 768 });
 
     const Nav = styled.div`
