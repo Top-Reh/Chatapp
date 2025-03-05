@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { auth } from './firebase';
 import {useAuthState} from 'react-firebase-hooks/auth'
 import Navbar from './container/navbar';
