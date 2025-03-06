@@ -175,7 +175,7 @@ const ChatList = ({setSelectedchat,ismobile,selectedchat}) => {
           </button>
           <input
             type="text"
-            placeholder="Search sellers..."
+            placeholder="Search users..."
             className="search-bar input"
             onKeyDown={handlekeydown}
             value={username}
